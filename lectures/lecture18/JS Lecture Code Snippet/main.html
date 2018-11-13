@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body ><button> navneel</button>
+        <center><h1>JS Checker</h1></center>
+        <div id ="domMethods" onmouseover="document.getElementById('mirror').innerHTML =  document.getElementById('domMethods').firstChild.nextSibling.nextSibling.id">
+            <h2 id = "1ne" style="text-align:center ">DOM Methods</h2><div style= "text-align: center" class = "lol" id ="oldValue">Old Value</div><p style="text-align:center">The ID of the above element is:</p><div style = "text-align: center" id = "mirror" ></div>
+            <center><button style = "display: inline-block" onclick = "document.getElementById('oldValue').innerHTML = 'New Value'">Changes the text</button>
+            <button onclick = "document.getElementById('oldValue').style.color  = 'Red'">Changes the colour</button>
+            <button onclick = "document.getElementById('oldValue').id = 'nv'">Change the ID :o</button></center>
+        </div>
+        <br><br>
+        <div id = "outputdom">
+                <center><input  id = "domoutin" type = "text"><br><br>
+                <button onclick = "console.log(document.getElementById('domoutin').value)" >console.log</button>
+                <button onclick = "document.write(document.getElementById('domoutin').value)">document.write</button>
+                <button onclick = "window.alert(document.getElementById('domoutin').value)">window.alert</button></center>    
+        </div>
+        <center>
+        <div id = "letvar">
+            <h1>Let vs Var</h1>
+            <button onclick="varlet()">Click for difference</button>
+        </div>
+        <div id= "NumMethods">
+                <h1>Number Methods</h1>
+            <input id ="num" type = "text">
+            <input id  ="op" type="text">
+            <button onclick="nummethod()">Click</button>
+            <div id = "out"></div>
+        </div>
+        <div id= "strMethods">
+                <h1>String Methods</h1>
+            <input id ="numstr" type = "text">
+            <input id  ="opstr" type="text">
+            <button onclick="strmethod()">Click</button>
+            <div id = "outstr"></div>
+        </div>
+        <div id = "async">
+            <h1>Async Check</h1>
+            <button onclick="lol()">Async check</button>
+        </div>
+        <!----><div id ="playground">
+            <h1>Simple </h1>
+            <input id = "finalInput"type="text">
+            <button onclick="trrr()">TRRRR</button><br><br>
+            <textarea id = "finalOutput"></textarea>
+        </div>-->
+        <div></div>
+        <script>
+            function trrr(){
+            //    var lol = new Date();
+            //console.log(lol);
+                let a = document.getElementById('finalInput').value;
+                let b = new Function("c","return parseInt(c);");
+                document.getElementById('finalOutput').innerHTML = (b(a));
+            }
+        </script>
+        <script src ="script.js"></script>
+    </center>
+    </body>
+</html>
